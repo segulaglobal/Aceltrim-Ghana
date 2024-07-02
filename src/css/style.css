@@ -1,0 +1,171 @@
+::selection {
+    background-color: #00AF51;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    --clr-lemon: #00AF51;
+    --clr-dark-lemon: #008658;
+    --clr-ylemon: #D1E260;
+    --clr-gray: #686666;
+    --clr-gray-dark: #222222;
+    --clr-gray-light: #D9D9D9;
+    --clr-white: #fff;
+    --clr-black: #131313;
+
+
+    background-color: var(--clr-white);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    font-family: "Hind Madurai", sans-serif;
+    line-height: 1.5;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* =================================== Javascript Classes ========================== */
+
+/* Remove Scrolling */
+.remove-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+} 
+
+
+
+
+/* ========== Container ============= */
+.container {
+    /* display: block; */
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 2800px;
+    height: 100%;
+    position: relative;
+}
+.blog-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+}
+ /* wrapper */
+.wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+section {
+    background-color: var(--clr-white);
+}
+
+
+
+/* ==================== CSS Buttons =================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== Text Styling ======================= */
+
+
+
+
+
+
+
+
+
+/* ======================== Animations ============================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== */
+      /* media queries */
+/* =============================== */
+@media (min-width: 768px) {
+    .wrapper {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+@media (min-width: 1500px) {
+    .wrapper {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+
+}
+@media (min-width: 1500px) {
+    
+/* Remove Scrolling */
+.remove-scrolling { 
+    height: 100%; 
+    overflow: hidden; 
+} 
+
+
+}
