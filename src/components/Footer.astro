@@ -5,30 +5,32 @@ import WhiteLogo from "../assets/logo-white.png"
 ---
 
 
-<footer class="section-footer">
+<footer class="section-footer" id="section-footer">
     <div class="container wrapper">
-        <div class="grid">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-                <img src={WhiteLogo.src} alt="second image"/>
-                <Image src={WhiteLogo} alt="Aceltrim Logo" />
+                <a href="/">
+                    <img src={WhiteLogo.src} class="footer-logo mb-4" alt="second image"/>
+                    <!-- <Image src={WhiteLogo} class="footer-logo mb-4" alt="Aceltrim Logo" /> -->
+                </a>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum ducimus amet quisquam eveniet facilis voluptates expedita enim soluta. Et?</p>
 
-                <ul>
-                    <li>
-                        <a href="#">Terms of service</a>
+                <ul class="terms-list">
+                    <li class="terms-item">
+                        <a href="#" class="terms-link">Terms of service</a>
                     </li>
-                    <li>
-                        <a href="#">Privacy policy</a>
+                    <li class="terms-item">
+                        <a href="#" class="terms-link">Privacy policy</a>
                     </li>
                 </ul>
             </div>
-            <div>
-                <a href="#" class="btn btn-green">Contact Us</a>
+            <div class="md:self-center md:justify-self-end">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNpzpZKndTNTpGrwNrWrHfdnNQDkzJWDLDmDMzblSbdRgnGFLLZsQrPtpMVBBcbxTkJBV" target="_blank" class="btn btn-green">Contact Us</a>
             </div>
         </div>
 
-        <hr>
+        <hr class="my-24">
 
         <ul class="social-list">
             <li class="social-item">
@@ -49,7 +51,132 @@ import WhiteLogo from "../assets/logo-white.png"
         </ul>
 
         <div class="copy">
-            <p>© 2024 Carbell Kofi Sarfo. All Rights Reserved Built with <i class="fa-solid fa-heart"></i> by Segula Global</p>
+            <p>© 2024 Carbell Kofi Sarfo. All Rights Reserved Built with <i class="text-red-600	 fa-solid fa-heart"></i> by <a href="https://segulaglobal.com/" class="text-lime-600">Segula Global</a></p>
         </div>
     </div>
 </footer>
+
+
+
+
+
+
+<style lang="scss">
+
+.section-footer {
+    background-color: var(--clr-black);
+    color: var(--clr-gray-light);
+    padding: 5rem 0 2rem;
+
+
+    // Footer Logo
+    .footer-logo {
+        width: 200px;
+    }
+}
+// End of footer logo
+
+
+
+
+// Footer Terms
+.terms-list {
+    display: flex;
+    margin: 3rem 0 0;
+
+    .terms-item {
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    .terms-link {
+        display: inline-block;
+        font-size: 1.5rem;
+        transition: .4s;
+
+        &:hover, &:focus {
+            color: var(--clr-lemon);
+            transform: scale(1.1);
+        }
+    }
+}
+// End of footer terms
+
+
+
+
+
+
+
+// Social media icons
+.social-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5rem 0 0;
+
+    .social-item {
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6rem;
+        height: 6rem;
+        border: 2px solid #989898;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        transition: .4s;
+        overflow: hidden;
+
+        i {
+            transition: .4s;
+        }
+
+        &:hover i, &:focus i {
+            transform: rotateY(360deg);
+        }
+
+        &:hover::after {
+            top: 0;
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, var(--clr-lemon), var(--clr-lemon-dark));
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .4s;
+            z-index: -1;
+        }
+    }
+    // End of social media icons
+}
+
+
+
+
+
+
+
+
+.copy {
+    width: 100%;
+    color: darkgray;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+</style>
