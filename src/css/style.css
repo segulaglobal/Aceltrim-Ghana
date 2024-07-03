@@ -133,7 +133,7 @@ section {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     transition: .2s;
 }
 

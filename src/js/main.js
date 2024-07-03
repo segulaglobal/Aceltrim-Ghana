@@ -3,6 +3,7 @@ const navButton = document.querySelector(".nav-btn");
 const navList = document.querySelector(".nav-list");
 const navOverlay = document.querySelector(".nav-overlay");
 const navItem = document.querySelectorAll(".nav-item");
+const body = document.body;
 
 
 let showMenu = false;
@@ -19,7 +20,8 @@ function openMenu () {
         navItem.forEach(item => {
             item.classList.add("show");
         });
-        document.body.classList.add(".no-scroll");
+        
+        body.classList.add("no-scroll");
         showMenu = true;
     }else {
         navButton.classList.remove("close");
@@ -29,7 +31,7 @@ function openMenu () {
         navItem.forEach(item => {
             item.classList.remove("show");
         });
-        document.body.classList.remove(".no-scroll");
+        body.classList.remove("no-scroll");
         showMenu = false;
     }
 }
