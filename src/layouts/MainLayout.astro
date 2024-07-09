@@ -12,6 +12,8 @@ image="/images/band.jpg" } = Astro.props;
 import "../css/style.css"
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+
+
 ---
 
 
@@ -24,6 +26,7 @@ import Footer from "../components/Footer.astro";
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -47,6 +50,10 @@ import Footer from "../components/Footer.astro";
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- End of Font Awesome CDN -->
 
+		<!-- Swipe Carousel CSS -->
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"	  /> -->
+		<!-- End of Swipe CSS -->
+
 	</head>
 
 	<body>
@@ -60,6 +67,11 @@ import Footer from "../components/Footer.astro";
 
 		<!-- Main Javascript file -->
 		<script src="./../js/main.js"></script>
+
+		<!-- Swipe Carousel -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script> -->
+		<script src="../js/swiper.js"></script>
+		<!-- End of Swipe Carousel -->
 	</body>
 </html>
 

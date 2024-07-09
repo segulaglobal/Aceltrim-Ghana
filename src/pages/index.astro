@@ -2,6 +2,15 @@
 import MainLayout from '../layouts/MainLayout.astro';
 
 import { Image } from "astro:assets";
+
+// About Images
+import About1 from "../assets/about-1.png";
+
+// Services Images
+import Service1 from "../assets/service-1.png";
+
+// Testimonial images
+import Testimonial1 from "../assets/testimonial-1.png";
 ---
 
 <MainLayout title="Aceltrim Ghana">
@@ -9,7 +18,7 @@ import { Image } from "astro:assets";
 
 
 	<!-- =========================== Coming soon Pge ===================== -->
-	<section class="section-coming-soon">
+	<!-- <section class="section-coming-soon">
 		<div class="container wrapper">
 			<div class="coming-container">
 				<p>We are about to land</p>
@@ -19,8 +28,273 @@ import { Image } from "astro:assets";
 				<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNpzpZKndTNTpGrwNrWrHfdnNQDkzJWDLDmDMzblSbdRgnGFLLZsQrPtpMVBBcbxTkJBV" target="_blank" class="btn btn-black">Send us a message</a>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End of Coming soon page -->
+
+
+
+
+	<!-- ============================ section Hero =================== -->
+	<section class="section-hero relative">
+		<!-- Slider main container -->
+		<div class="hero-swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">Slide 1</div>
+			<div class="swiper-slide">Slide 2</div>
+			<div class="swiper-slide">Slide 3</div>
+			...
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+	</section>
+	<!-- End of section hero -->
+
+
+	
+
+
+
+
+	<!-- =========================== Section About ===================== -->
+	<section class="section-home_about py-40">
+		<div class="container wrapper">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+				<div>
+					<h1 class="heading-big">Welcome to Lorem Ipsum</h1>
+					<p class="mb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde similique tempore minus velit sint consequuntur non quasi impedit consectetur officia?
+					<br>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, iste.
+					</p>
+					<a href="/about" class="btn btn-green">More about us</a>
+				</div>
+				<div>
+					<!-- <Image src={About1} alt="Aceltrim Group" /> -->
+					<img src={About1.src} alt="Aceltrim Group" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- End of section about -->
+
+
+
+
+
+
+	<!-- =========================== Section About ===================== -->
+	<section class="section-values py-40">
+		<div class="container wrapper">
+			<h2 class="heading-secondary">Our core values</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Value 1 -->
+				<div class="value value-1">
+					<i class="fa-regular fa-thumbs-up value-icon value-icon_1"></i>
+					<h3>commitment to Excellence</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum facilis rerum voluptatem esse voluptatibus, ratione aliquid quos exercitationem officiis.</p>
+				</div>
+				<!-- End of Value-1 -->
+
+				<!-- Value 2 -->
+				<div class="value value-2">
+					<i class="fa-regular fa-thumbs-up value-icon value-icon_2"></i>
+					<h3>commitment to Excellence</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum facilis rerum voluptatem esse voluptatibus, ratione aliquid quos exercitationem officiis.</p>
+				</div>
+				<!-- End of Value-2 -->
+
+				<!-- Value 3 -->
+				<div class="value value-3">
+					<i class="fa-regular fa-thumbs-up value-icon value-icon_3"></i>
+					<h3>commitment to Excellence</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum facilis rerum voluptatem esse voluptatibus, ratione aliquid quos exercitationem officiis.</p>
+				</div>
+				<!-- End of Value-3 -->
+			</div>
+		</div>
+	</section>
+	<!-- End of Values -->
+
+
+
+
+
+	<!-- =========================== Section services ===================== -->
+	<section class="section-service py-40">
+		<div class="container wrapper">
+			<h2 class="heading-secondary">Our Services</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, nemo.</p>
+
+			<div class="grid grid-cols-1 gap-12">
+				<!-- Service-1 -->
+				<div class="service grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+					<div class="service-text">
+						<h3>Landscape Design and Installation</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, velit? Sequi, earum!</p>
+						<a href="#" class="btn-thin">Learn More</a>
+					</div>
+					<div class="service-img">
+						<img src={Service1.src} alt="Landscape Design and Installation" />
+					</div>
+				</div>
+				<!-- End of service-1 -->
+
+				<!-- Service-1 -->
+				<div class="service grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+					<div class="service-text">
+						<h3>Landscape Design and Installation</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, velit? Sequi, earum!</p>
+						<a href="#" class="btn-thin">Learn More</a>
+					</div>
+					<div class="service-img">
+						<img src={Service1.src} alt="Landscape Design and Installation" />
+					</div>
+				</div>
+				<!-- End of service-1 -->
+
+				<!-- Service-1 -->
+				<div class="service grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+					<div class="service-text">
+						<h3>Landscape Design and Installation</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, velit? Sequi, earum!</p>
+						<a href="#" class="btn-thin">Learn More</a>
+					</div>
+					<div class="service-img">
+						<img src={Service1.src} alt="Landscape Design and Installation" />
+					</div>
+				</div>
+				<!-- End of service-1 -->
+
+				<!-- Service-1 -->
+				<div class="service grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+					<div class="service-text">
+						<h3>Landscape Design and Installation</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, velit? Sequi, earum!</p>
+						<a href="#" class="btn-thin">Learn More</a>
+					</div>
+					<div class="service-img">
+						<img src={Service1.src} alt="Landscape Design and Installation" />
+					</div>
+				</div>
+				<!-- End of service-1 -->
+			</div>
+		</div>
+	</section>
+
+	<!-- End of services -->
+
+
+
+
+
+	<!-- =========================== Section Banner ===================== -->
+	<section class="section-banner py-40">
+		<div class="container wrapper">
+			<div class="banner-container text-center">
+				<h1 class="heading-big">Let's Build Together</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam blanditiis similique fugiat tenetur. Suscipit voluptatem omnis debitis esse. Doloribus molestiae similique ratione sequi deleniti.</p>
+				<a href="#" class="btn btn-black">Send a message</a>
+			</div>
+		</div>
+	</section>
+	<!-- End of section Banner -->
+
+
+
+
+
+
+	<!-- =========================== Section Testimonials ===================== -->
+	<section class="section-testimonials py-40">
+		<div class="container wrapper">
+			<h2 class="heading-secondary">Testimonials</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, nemo.</p>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="grid grid-cols-1 gap-8">
+					<!-- testimonial 1 -->
+					<div class="testimonial">
+						<div class="testimonial-image">
+							<img src={Testimonial1.src} alt="Client-1">
+							<div>
+								<h3>Carbell Sarfo</h3>
+								<p>Managing Director</p>
+							</div>
+						</div>
+						<div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero, libero sint quas sequi doloremque.</p>
+						</div>
+
+					</div>
+					<!-- end of Testimonial-1 -->
+
+					<!-- testimonial 1 -->
+					<div class="testimonial">
+						<div class="testimonial-image">
+							<img src={Testimonial1.src} alt="Client-1">
+							<div>
+								<h3>Carbell Sarfo</h3>
+								<p>Managing Director</p>
+							</div>
+						</div>
+						<div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero, libero sint quas sequi doloremque.</p>
+						</div>
+
+					</div>
+					<!-- end of Testimonial-1 -->
+
+					<!-- testimonial 1 -->
+					<div class="testimonial">
+						<div class="testimonial-image">
+							<img src={Testimonial1.src} alt="Client-1">
+							<div>
+								<h3>Carbell Sarfo</h3>
+								<p>Managing Director</p>
+							</div>
+						</div>
+						<div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero, libero sint quas sequi doloremque.</p>
+						</div>
+
+					</div>
+					<!-- end of Testimonial-1 -->
+
+					<!-- testimonial 1 -->
+					<div class="testimonial">
+						<div class="testimonial-image">
+							<img src={Testimonial1.src} alt="Client-1">
+							<div>
+								<h3>Carbell Sarfo</h3>
+								<p>Managing Director</p>
+							</div>
+						</div>
+						<div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero, libero sint quas sequi doloremque.</p>
+						</div>
+
+					</div>
+					<!-- end of Testimonial-1 -->
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of section Testimonials -->
+
+
+
 
 
 
@@ -30,6 +304,28 @@ import { Image } from "astro:assets";
 
 <style lang="scss">
 
+
+// 
+.section-hero {
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+
+
+	.hero-swiper {
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		background-color: var(--clr-lemon);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+// ================ Section Coming soon ==========
 .section-coming-soon {
 	width: 100%;
 	height: 80vh;
@@ -60,6 +356,7 @@ import { Image } from "astro:assets";
 		margin-bottom: 2rem;
 	}
 }
+// End of Section coming soon
 
 
 
