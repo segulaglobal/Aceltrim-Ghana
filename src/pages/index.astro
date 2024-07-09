@@ -3,6 +3,9 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 import { Image } from "astro:assets";
 
+// heroimages
+import Hero1 from "../assets/page-1.png"
+
 // About Images
 import About1 from "../assets/about-1.png";
 
@@ -25,7 +28,7 @@ import Testimonial1 from "../assets/testimonial-1.png";
 				<h1>Get in touch</h1>
 				<p>In the mean time, please do feel free to send all questions and all messages to via email</p>
 
-				<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNpzpZKndTNTpGrwNrWrHfdnNQDkzJWDLDmDMzblSbdRgnGFLLZsQrPtpMVBBcbxTkJBV" target="_blank" class="btn btn-black">Send us a message</a>
+				<a href="mailto:kofikwaakoomson@yahoo.com" class="btn btn-black">Send us a message</a>
 			</div>
 		</div>
 	</section> -->
@@ -35,26 +38,63 @@ import Testimonial1 from "../assets/testimonial-1.png";
 
 
 	<!-- ============================ section Hero =================== -->
-	<section class="section-hero relative">
-		<!-- Slider main container -->
+	<section class="section-hero">
+		
 		<div class="hero-swiper">
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
-			<!-- Slides -->
-			<div class="swiper-slide">Slide 1</div>
-			<div class="swiper-slide">Slide 2</div>
-			<div class="swiper-slide">Slide 3</div>
-			...
+				<!-- Slides -->
+
+				 <!-- page-1 -->
+				<div class="swiper-slide page-1">
+					<div class="container wrapper">
+						<div class="w-full h-full page-1_container text-white  items-center text-center md:text-left">
+							<div>
+								<h1 class="hero-text mb-4">We Design &amp; Create your Gardens</h1>
+								<p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam deserunt ea eligendi praesentium commodi iste ipsam nihil similique ullam?</p>
+								<a href="#" class="btn btn-black">Contact Us</a>
+							</div>
+							<div>
+								<img src={Hero1.src} alt="hero Imag-1">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Page-1 -->
+
+				<!-- Page-2 -->
+				<div class="swiper-slide page-2">
+					<div class="container wrapper">
+						<div class="w-full h-full max-w-6xl mx-auto  text-white pt-40 flex items-center flex-col justify-center text-center ">
+							<h1 class="hero-text mb-8">We Design &amp; Create your Gardens</h1>
+							<p class="mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam deserunt ea eligendi praesentium commodi iste ipsam nihil similique ullam?</p>
+							<a href="#" class="btn btn-green">Contact Us</a>
+						</div>
+					</div>	
+				</div>
+				<!-- End of page-2 -->
+
+				<!-- Page-3 -->
+				<div class="swiper-slide page-3">
+					<div class="container wrapper">
+						<div class="w-full h-full max-w-6xl mx-auto text-white pt-40 flex items-center flex-col justify-center text-center ">
+							<h1 class="hero-text mb-8">We Design &amp; Create your Gardens</h1>
+							<p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam deserunt ea eligendi praesentium commodi iste ipsam nihil similique ullam?</p>
+							<a href="#" class="btn btn-green">Contact Us</a>
+						</div>
+					</div>
+				</div>
+				<!-- End of page-3 -->
 			</div>
+
+
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
-		
+
+
 			<!-- If we need navigation buttons -->
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
-		
-			<!-- If we need scrollbar -->
-			<div class="swiper-scrollbar"></div>
 		</div>
 	</section>
 	<!-- End of section hero -->
@@ -296,33 +336,69 @@ import Testimonial1 from "../assets/testimonial-1.png";
 
 
 
-
-
 </MainLayout>
 
 
 
+
+
+
+
+
+
+
 <style lang="scss">
-
-
 // 
 .section-hero {
-	width: 100%;
-	height: 90vh;
-	overflow: hidden;
-
+	width: 100vw;
+	height: 100vh;
+	position: relative;
 
 	.hero-swiper {
 		width: 100%;
 		height: 100%;
 	}
+
+	// Swiper Slide
 	.swiper-slide {
-		background-color: var(--clr-lemon);
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		padding-top: 5rem;
+	}
+
+
+
+
+	.page-1 {
+		background-image: url(/assets/hero-1.png);
+
+		&_container {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 5rem;
+		}
+	}
+	.page-2 {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(/assets/hero-2.png);
+	}
+	.page-3 {
+		background-image:  linear-gradient(to right, rgba(0, 175, 82, 0.85), rgba(0, 0, 0, 0.8)), url(/assets/hero-3.png);
+	}
+
+
+	// =========== Hero Text ==============
+	.hero-text {
+		font-size: clamp(4rem, 6vw, 6rem);
+		font-family: "montserrat", sans-serif;
+		line-height: 1.2;
+		font-weight: bolder;
 	}
 }
+
+
+
 
 
 // ================ Section Coming soon ==========
@@ -374,6 +450,14 @@ import Testimonial1 from "../assets/testimonial-1.png";
 // Desktop
 @media (min-width: 768px) {
     
+	.section-hero {
+
+		.page-1 {
+			&_container {
+				grid-template-columns: 3fr 2fr;
+			}
+		}
+	}
 
 }
 

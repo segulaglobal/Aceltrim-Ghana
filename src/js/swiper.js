@@ -1,54 +1,47 @@
-// import Swiper JS
-import Swiper from 'swiper/bundle';
-// import { Navigation, Pagination } from 'swiper/modules';
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination, Autoplay, } from 'swiper/modules';
 
 
-// import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper styles
+// import Swiper and modules styles
 import 'swiper/css';
-// import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay'
 
 
 
-// Swiper.use([
-//     Navigation,
-//     Pagination
-// ]);
 
-const swiper = new Swiper('.hero-swiper', {
+// init Swiper:
+const heroSwiper = new Swiper('.hero-swiper', {
+  // configure Swiper to use modules
+  modules: [
+        Navigation, Pagination, Autoplay
+    ],
 
-     // configure Swiper to use modules
-    // modules: [
-        
-    //     Navigation, 
-        
-        
-    //     Pagination],
-  
-  
-  
-  // Optional parameters
-    // direction: 'horizontal',
     // loop: true,
+    // effect: "fade",
+    
+    // effect: 'fade',
+    // fadeEffect: {
+    //     crossFade: true
+    // },
 
-    // // If we need pagination
-    Pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
     },
+
+    // autoplay: {
+    //     // delay: 3000,
+    //     // disableOnInteraction: false,
+    //     // stopOnLastSlide: false,
+    // }
+
 });
-
-
-
