@@ -48,13 +48,13 @@ import Testimonial1 from "../assets/testimonial-1.png";
 				 <!-- page-1 -->
 				<div class="swiper-slide page-1">
 					<div class="container wrapper">
-						<div class="w-full h-full page-1_container text-white  items-center text-center md:text-left">
+						<div class="w-full h-full page-1_container text-white  items-center text-center md:text-left pt-40">
 							<div>
 								<h1 class="hero-text mb-4">We Design &amp; Create your Gardens</h1>
 								<p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam deserunt ea eligendi praesentium commodi iste ipsam nihil similique ullam?</p>
 								<a href="#" class="btn btn-black">Contact Us</a>
 							</div>
-							<div>
+							<div class="hidden md:block">
 								<img src={Hero1.src} alt="hero Imag-1">
 							</div>
 						</div>
@@ -351,7 +351,7 @@ import Testimonial1 from "../assets/testimonial-1.png";
 // 
 .section-hero {
 	width: 100vw;
-	height: 100vh;
+	height: 95vh;
 	position: relative;
 
 	.hero-swiper {
@@ -367,8 +367,6 @@ import Testimonial1 from "../assets/testimonial-1.png";
 		background-position: center;
 		padding-top: 5rem;
 	}
-
-
 
 
 	.page-1 {
@@ -394,6 +392,70 @@ import Testimonial1 from "../assets/testimonial-1.png";
 		font-family: "montserrat", sans-serif;
 		line-height: 1.2;
 		font-weight: bolder;
+	}
+
+
+
+	// =========== Swiper Carousel ==============
+
+	// Navigation Buttons
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: flex;
+		width: 5rem;
+		height: 5rem;
+		background-color: var(--clr-white);
+		border-radius: 50%;
+		opacity: 0;
+		pointer-events: none;
+		transition: .2s ease-in-out;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:hover {
+			background-color: var(--clr-lemon);
+		}
+		&:hover::after {
+			color: var(--clr-white);
+		}
+
+		&::after {
+			// display: none;
+			font-size: 2rem;
+			font-weight: bolder;
+			color: var(--clr-lemon);
+			transition: .2s;
+		}
+	}
+
+	&:hover .swiper-button-next,
+	&:hover .swiper-button-prev {
+		opacity: 1;
+		pointer-events: initial;
+	}
+
+	.swiper-button-next {
+		right: 5rem;
+	}
+	.swiper-button-prev {
+		left: 4rem;
+	}
+
+
+	// Paginations
+	.swiper-pagination {
+		bottom: 2rem;
+		// background-color: orange;
+
+	}
+	.swiper-pagination-bullets {
+		// background-color: red;
+		// width: 100px;
+
+		span {
+			// background-color: red;
+		}
 	}
 }
 
@@ -478,6 +540,23 @@ import Testimonial1 from "../assets/testimonial-1.png";
 // Tables
 @media screen and (max-width: 768px) {
 	
+	// ================ Hero Section ===============
+	.section-hero {
+
+
+		.swiper-button-next,
+		.swiper-button-prev {
+			top: 90%;
+		}
+
+
+		.swiper-button-next {
+			right: 2rem;
+		}
+		.swiper-button-prev {
+			left: 1rem;
+		}
+	}
 }
 
 

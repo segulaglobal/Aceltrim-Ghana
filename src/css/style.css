@@ -14,6 +14,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    width: 100%;
 }
 
 
@@ -38,6 +39,7 @@ body {
     color: var(--clr-black);
     background-color: #E9EAED;
     line-height: 2;
+    overflow-x: hidden;
 }
 
 

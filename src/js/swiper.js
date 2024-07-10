@@ -19,7 +19,7 @@ const heroSwiper = new Swiper('.hero-swiper', {
         Navigation, Pagination, Autoplay
     ],
 
-    // loop: true,
+    loop: true,
     // effect: "fade",
     
     // effect: 'fade',
@@ -35,13 +35,13 @@ const heroSwiper = new Swiper('.hero-swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        // dynamicBullets: true,
     },
 
-    // autoplay: {
-    //     // delay: 3000,
-    //     // disableOnInteraction: false,
-    //     // stopOnLastSlide: false,
-    // }
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        stopOnLastSlide: false,
+    }
 
 });
