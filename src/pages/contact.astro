@@ -11,4 +11,146 @@ import PageHeader from "../components/PageHeader.astro";
     <PageHeader>
         Get in touch
     </PageHeader>
+
+
+    <!-- ================== Section Contact =========== -->
+    <div class="section-contact py-40">
+        <div class="container wrapper">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Details -->
+                <div>
+                    <h2 class="heading-secondary mb-12">Contact Details</h2>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <i class="fa fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+233 55 808 8412</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa fa-envelope"></i>
+                            <div>
+                                <h3>Email Address</h3>
+                                <p>info@aceltrimghana.com</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa fa-map-marker"></i>
+                            <div>
+                                <h3>Locate Us</h3>
+                                <p>Location goes here</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of contact Details  -->
+
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="heading-secondary mb-12">Send us a message</h2>
+                    <form action="#" class="contact-form">
+                        <div class="input-field">
+                            <label for="fname">Full Name</label>
+                            <input type="text" name="fname" id="fname" placeholder="First Last Name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="tel">Phone Number</label>
+                            <input type="text" name="tel" id="tel" placeholder="(+... 012 345 678)" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" required placeholder="Your message goes here" cols="30" rows="5"></textarea>
+                        </div>
+
+                        <input type="submit" value="Send" class="btn btn-green">
+    
+                    </form>
+                </div>
+                <!-- End of contact form -->
+            </div>
+        </div>
+    </div>
+    <!-- End of section Contact -->
+
+
+
 </MainLayout>
+
+
+
+
+<style lang="scss">
+
+.contact-list {
+
+    .contact-item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem
+        }
+    }
+
+    .contact-item:hover > i {
+        background-color: var(--clr-lemon);
+        transform: scale(.8);
+        color: #fff;
+    }
+    
+    i {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: lightgray;
+        border: 1px solid var(--clr-lemon);
+        margin-right: 2rem;
+        font-size: 1.6rem;
+        transition: .2s;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+
+
+// Contact Form
+.contact-form {
+    width: 100%;
+
+    .input-field {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+    input, textarea {
+        width: 100%;
+        font-family: inherit;
+        background-color: #fff;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        border: 1px solid darkgray;
+        transition: .2s;
+        resize: none;
+
+        &:focus {
+            border: 1px solid var(--clr-lemon);
+        }
+    }
+}
+
+</style>
