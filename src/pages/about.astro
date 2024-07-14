@@ -1,11 +1,77 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import Banner from "../components/Banner.astro";
+import Values from "../components/Values.astro";
 
-
+import About1 from "../assets/about-1.png"
 ---
 
 
 
 <MainLayout title="About Aceltrim Ghana">
+    <PageHeader>
+        About Us
+    </PageHeader>
 
+
+    <!-- About -->
+    <section class="section-about py-24">
+        <div class="container wrapper">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="heading-secondary mb-8">How it started</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, a tenetur dolorum ducimus cumque maxime voluptates explicabo facere praesentium sequi corrupti doloribus veniam? Ratione, quia.</p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex recusandae iure molestiae illo autem, accusantium nam numquam repellat quaerat nisi provident dolore exercitationem labore, deserunt, adipisci magnam enim aut illum.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis molestiae quod voluptatibus reprehenderit explicabo aut quia accusantium beatae doloribus fuga provident sunt doloremque molestias perspiciatis quidem et officia sequi, quibusdam ullam similique adipisci veniam. Inventore architecto itaque cupiditate quisquam.</p>
+                </div>
+                <div>
+					<!-- <Image src={About1} alt="Aceltrim Group" /> -->
+					<img src={About1.src} alt="Aceltrim Group" class="mb-8" />
+					<img src={About1.src} alt="Aceltrim Group" />
+				</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============= Values ============= -->
+    <Values></Values>
+    <!-- End of Values -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================ Section Banner ============== -->
+    <Banner></Banner>
+    <!-- End of section Banner -->
 </MainLayout>
+
+
+
+
+
+
+
+<style lang="scss">
+
+    .section-about {
+
+
+        img {
+            
+        }
+    }
+
+</style>

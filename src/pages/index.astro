@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import Banner from '../components/Banner.astro';
 
 import { Image } from "astro:assets";
 
@@ -14,6 +15,7 @@ import Service1 from "../assets/service-1.png";
 
 // Testimonial images
 import Testimonial1 from "../assets/testimonial-1.png";
+import Values from '../components/Values.astro';
 ---
 
 <MainLayout title="Aceltrim Ghana">
@@ -134,36 +136,7 @@ import Testimonial1 from "../assets/testimonial-1.png";
 
 
 	<!-- =========================== Section Values ===================== -->
-	<section class="section-values py-40 relative">
-		<div class="container wrapper">
-			<h2 class="heading-secondary mb-20">Our core values</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-				<!-- Value 1 -->
-				<div class="value value-1">
-					<i class="fa-regular fa-thumbs-up value-icon value-icon_1"></i>
-					<h3>commitment to Excellence</h3>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum facilis rerum voluptatem esse voluptatibus, ratione aliquid quos exercitationem officiis.</p>
-				</div>
-				<!-- End of Value-1 -->
-
-				<!-- Value 2 -->
-				<div class="value value-2">
-					<i class="fa-regular fa-thumbs-up value-icon value-icon_2"></i>
-					<h3>commitment to Excellence</h3>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum facilis rerum voluptatem esse voluptatibus, ratione aliquid quos exercitationem officiis.</p>
-				</div>
-				<!-- End of Value-2 -->
-
-				<!-- Value 3 -->
-				<div class="value value-3">
-					<i class="fa-regular fa-thumbs-up value-icon value-icon_3"></i>
-					<h3>commitment to Excellence</h3>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum facilis rerum voluptatem esse voluptatibus, ratione aliquid quos exercitationem officiis.</p>
-				</div>
-				<!-- End of Value-3 -->
-			</div>
-		</div>
-	</section>
+	<Values></Values>
 	<!-- End of Values -->
 
 
@@ -238,20 +211,9 @@ import Testimonial1 from "../assets/testimonial-1.png";
 
 
 
-
-
-	<!-- =========================== Section Banner ===================== -->
-	<section class="section-banner py-40">
-		<div class="container wrapper">
-			<div class="banner-container text-center">
-				<h1 class="heading-big">Let's Build Together</h1>
-				<p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam blanditiis similique fugiat tenetur. Suscipit voluptatem omnis debitis esse. Doloribus molestiae similique ratione sequi deleniti.</p>
-				<a href="#" class="btn btn-black">Send a message</a>
-			</div>
-		</div>
-	</section>
-	<!-- End of section Banner -->
-
+	<!-- ============= Section Banner ============== -->
+	<Banner></Banner>
+	<!--End of section Banner  -->
 
 
 
@@ -520,117 +482,7 @@ import Testimonial1 from "../assets/testimonial-1.png";
 
 
 
-// ================ Section Values ==========
-.section-values {
-	border-bottom: 1px solid lightgray;
 
-	.value {
-		background-color: var(--clr-white);
-		padding: 3rem;
-		border-radius: 1rem;
-		box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .1);
-		position: relative;
-		z-index: 1;
-		overflow: hidden;
-		transition: .2s;
-
-		&:hover {
-			box-shadow: 0 .4rem .7rem rgba(0, 0, 0, .3);
-			transform: translateY(-2px);
-		}
-		&:hover .value-icon {
-			transform: scale(.9);
-		}
-
-		&::after {
-			content: " ";
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			background-color: red;
-			position: absolute;
-			top: 100%;
-			left: 100%;
-			z-index: -2;
-			transform: translate(-50%, -50%)
-		}
-		&::before {
-			content: "";
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background-color: var(--clr-white);
-			// background-color: green;
-			position: absolute;
-			top: 100%;
-			left: 100%;
-			z-index: -1;
-			transform: translate(-50%, -50%)
-		}
-
-		// Icons
-		&-icon {
-			// background-color: red;
-			display: flex;
-			width: 5rem;
-			height: 5rem;
-			border-radius: 50%;
-			align-items: center;
-			justify-content: center;
-			margin-bottom: 2rem;
-			outline: 10px rgba(0, 128, 0, 0.626) solid;
-			transition: .2s;
-		}
-
-		// h3
-		h3 {
-			font-family: "montserrat", sans-serif;
-			font-weight: bolder;
-			text-transform: capitalize;
-			margin: 1rem 0;
-			margin-top: 3rem;
-		}
-
-
-		// Value 1
-		&-1 {
-
-			&::after {
-				background-color: rgba(209, 226, 96, 0.652);
-			}
-
-			.value-icon {
-				background-color: #D1E260;
-				outline-color: rgba(209, 226, 96, 0.652);
-			}
-		}
-		// Value 2
-		&-2 {
-
-			&::after {
-				background-color: rgba(255, 0, 0, 0.7);
-			}
-
-			.value-icon {
-				background-color: #FF0000;
-				outline-color: rgba(255, 0, 0, 0.7);
-			}
-		}
-		// Value 3
-		&-3 {
-
-			&::after {
-				background-color: rgba(0, 26, 255, 0.7);
-			}
-
-			.value-icon {
-				background-color: #001AFF;
-				outline-color: rgba(0, 26, 255, 0.7);
-			}
-		}
-	}
-}
-// End of section Values
 
 
 
@@ -666,26 +518,6 @@ import Testimonial1 from "../assets/testimonial-1.png";
 	}
 }
 // End of section services
-
-
-
-
-// ================== Section Banner =============
-.section-banner {
-	width: 100%;
-	background-image: url(/assets/hero-1.png);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	color: #fff;
-
-	.banner-container {
-		max-width: 900px;
-		margin: 0 auto;
-	}
-}
-// End of section Banner
-
 
 
 

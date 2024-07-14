@@ -220,9 +220,13 @@ section {
     margin-bottom: 2rem;
 }
 
+.w-sm {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .heading-secondary {
     display: block;
-    text-align: center;
     font-family: "Lora", serif;
     line-height: 1;
     font-size: 3.5rem;
