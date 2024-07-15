@@ -16,7 +16,7 @@ import PageHeader from "../components/PageHeader.astro";
     <!-- ================== Section Contact =========== -->
     <div class="section-contact py-40">
         <div class="container wrapper">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-40 md:gap-12">
                 <!-- Contact Details -->
                 <div>
                     <h2 class="heading-secondary mb-12">Contact Details</h2>
@@ -43,6 +43,11 @@ import PageHeader from "../components/PageHeader.astro";
                             </div>
                         </li>
                     </ul>
+
+                    <!-- Google Map -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.466931908205!2d-0.16007252525427526!3d5.645375394335907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9be1618b37f9%3A0xb51d589c6f2f32f!2sALX%20Tech%20Hub%20East%20Legon!5e0!3m2!1sen!2sgh!4v1721033920068!5m2!1sen!2sgh" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <!-- End of contact Details  -->
 
@@ -119,6 +124,16 @@ import PageHeader from "../components/PageHeader.astro";
         font-size: 1.5rem;
         font-weight: bold;
     }
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    padding-right: 5rem;
+    background-color: red;
 }
 
 
