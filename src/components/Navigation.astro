@@ -32,7 +32,7 @@ import BlackLogo from "../assets/logo-black.png"
                     <a href="/services" class="nav-link">Our Services</a>
                 </li>
                 <li>
-                    <a href="/contact" class="btn btn-black">Contact Us</a>
+                    <a href="/contact" class="nav-contact">Contact Us</a>
                 </li>
             </ul>
             <!-- End of navigation menu -->
@@ -145,6 +145,23 @@ import BlackLogo from "../assets/logo-black.png"
         }
     }
 
+    .nav-contact {
+        display: inline-block;
+        padding: .7rem 2rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: var(--clr-gray-dark);
+        color: var(--clr-white);
+        border-radius: 2rem;
+        transition: .2s;
+
+        &:hover, 
+        &:focus {
+            background-color: var(--clr-white);
+            color: var(--clr-gray-dark);
+            transform: scale(.9);
+        }
+    }
 }
 
 
@@ -184,6 +201,35 @@ import BlackLogo from "../assets/logo-black.png"
             font-size: 1.5rem;
             font-weight: 600;
             color: var(--clr-gray-dark);
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+            transition: .2s;
+
+            &:hover,
+            &:focus {
+                transform: scale(.9);
+            }
+
+            &:hover::after,
+            &:focus::after {
+                transform: scale(1);
+                opacity: 1;
+            }
+            &::after {
+                content: "";
+                width: 100%;
+                height: .5rem;
+                background-color: var(--clr-lemon);
+                position: absolute;
+                left: 0;
+                top: 100%;
+                border-radius: .5rem;
+                transition: .2s;
+                z-index: -1;
+                transform-origin: center;
+                transform: scale(0);
+            }
         }
     }
 }
