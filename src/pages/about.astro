@@ -4,6 +4,7 @@ import PageHeader from "../components/PageHeader.astro";
 import Banner from "../components/Banner.astro";
 import Values from "../components/Values.astro";
 
+import { Image } from "astro:assets";
 import About1 from "../assets/about-1.png"
 import About2 from "../assets/about-2.png"
 ---
@@ -41,8 +42,8 @@ import About2 from "../assets/about-2.png"
                 </div>
                 <div>
 					<!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={About2.src} alt="Aceltrim Group" class="mb-8 " />
-					<img src={About1.src} alt="Aceltrim Group" class="" />
+					<Image src={About2} alt="Aceltrim Group" class="mb-8 " />
+					<Image src={About1} alt="Aceltrim Group" class="" />
 				</div>
             </div>
         </div>

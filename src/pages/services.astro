@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import Banner from "../components/Banner.astro";
 
+import { Image } from "astro:assets";
 import Service1 from "../assets/service-1.png";
 import Service2 from "../assets/service-2.png";
 import Service3 from "../assets/service-3.png";
@@ -39,7 +40,7 @@ import Service4 from "../assets/service-4.png";
                 </div>
                 <div class="service-image slide-fright">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service1.src} alt="Landscape Design and Installation" />
+					<Image src={Service1} alt="Landscape Design and Installation" />
                 </div>
             </div>
             <!-- End of Landscape Design and Installation -->
@@ -48,7 +49,7 @@ import Service4 from "../assets/service-4.png";
             <div class="slide-fright service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="lawn-care">
                 <div class="service-image slide-fleft">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service2.src} alt="Lawn Care and Maintenance" />
+					<Image src={Service2} alt="Lawn Care and Maintenance" />
                 </div>
                 <div class="service-text slide-fright">
                     <h2 class="heading-secondary mb-8"> Lawn Care and Maintenance</h2>
@@ -75,7 +76,7 @@ import Service4 from "../assets/service-4.png";
                 </div>
                 <div class="service-image slide-fright">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service3.src} alt="Hardscape Construction" />
+					<Image src={Service3} alt="Hardscape Construction" />
                 </div>
             </div>
             <!-- End of Hardscape Construction -->
@@ -84,7 +85,7 @@ import Service4 from "../assets/service-4.png";
             <div class="slide-fright service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="landscape-renovation">
                 <div class="service-image slide-fleft">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service4.src} alt="Aceltrim Group" />
+					<Image src={Service4} alt="Aceltrim Group" />
                 </div>
                 <div class="service-text slide-fright">
                     <h2 class="heading-secondary mb-8">Landscape Renovation and Enhancement</h2>
@@ -117,14 +118,14 @@ import Service4 from "../assets/service-4.png";
             <h2 class="heading-secondary mb-12">Our Gallery</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
-                <img src={Service1.src} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
+                <Image src={Service1} alt="Aceltrim Group" />
             </div>
         </div>
     </div>
