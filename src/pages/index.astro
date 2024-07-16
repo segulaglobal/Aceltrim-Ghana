@@ -56,13 +56,13 @@ import Values from '../components/Values.astro';
 					<div class="container wrapper">
 						<div class="w-full h-full page-1_container text-white  items-center text-center md:text-left pt-40">
 							<div>
-								<h1 class="hero-text mb-4">We Create Your Dream Landscape</h1>
-								<p class="mb-8">Transform your outdoor space into a breathtaking oasis with Aceltrim.
+								<h1 class="hero-text mb-4 animate__animated animate__rubberBand">We Create Your Dream Landscape</h1>
+								<p class="mb-8 animate__animated animate__fadeIn animate__delay-.5s">Transform your outdoor space into a breathtaking oasis with Aceltrim.
 								</p>
-								<a href="/contact" class="btn btn-black">Contact Us</a>
+								<a href="/contact" class="btn btn-black animate__animated animate__fadeIn animate__delay-1s">Contact Us</a>
 							</div>
 							<div class="hidden md:block">
-								<img src={Hero1.src} alt="hero Imag-1">
+								<img src={Hero1.src} alt="hero Imag-1" class="mb-8 animate__animated animate__fadeIn animate__delay-1s" />
 							</div>
 						</div>
 					</div>
@@ -126,7 +126,7 @@ import Values from '../components/Values.astro';
 				</div>
 				<div>
 					<!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={About2.src} alt="Aceltrim Group" />
+					<img src={About2.src} alt="Aceltrim Group" data-aos="fade-up"/>
 				</div>
 			</div>
 		</div>
