@@ -9,9 +9,13 @@ import Hero1 from "../assets/page-1.png"
 
 // About Images
 import About1 from "../assets/about-1.png";
+import About2 from "../assets/about-2.png";
 
 // Services Images
 import Service1 from "../assets/service-1.png";
+import Service2 from "../assets/service-2.png";
+import Service3 from "../assets/service-3.png";
+import Service4 from "../assets/service-4.png";
 
 // Testimonial images
 import Testimonial1 from "../assets/testimonial-1.png";
@@ -122,7 +126,7 @@ import Values from '../components/Values.astro';
 				</div>
 				<div>
 					<!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={About1.src} alt="Aceltrim Group" />
+					<img src={About2.src} alt="Aceltrim Group" />
 				</div>
 			</div>
 		</div>
@@ -175,7 +179,7 @@ import Values from '../components/Values.astro';
 						<a href="/services#lawn-care" class="btn-thin">Learn More</a>
 					</div>
 					<div class="service-img">
-						<img src={Service1.src} alt="Lawn Care and Maintenance" />
+						<img src={Service2.src} alt="Lawn Care and Maintenance" />
 					</div>
 				</div>
 				<!-- End of LawnCare and Maintenance -->
@@ -189,7 +193,7 @@ import Values from '../components/Values.astro';
 						<a href="/services#hardscape-construction" class="btn-thin">Learn More</a>
 					</div>
 					<div class="service-img">
-						<img src={Service1.src} alt="Hardscape Construction" />
+						<img src={Service3.src} alt="Hardscape Construction" />
 					</div>
 				</div>
 				<!-- End of Hardscape Construction -->
@@ -203,7 +207,7 @@ import Values from '../components/Values.astro';
 						<a href="/services#landscape-renovation" class="btn-thin">Learn More</a>
 					</div>
 					<div class="service-img">
-						<img src={Service1.src} alt="Landscape Design and Installation" />
+						<img src={Service4.src} alt="Landscape Design and Installation" />
 					</div>
 				</div>
 				<!-- End of service-1 -->
@@ -348,6 +352,10 @@ import Values from '../components/Values.astro';
 		width: 100%;
 		height: 100%;
 	}
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+	}
 
 	// Swiper Slide
 	.swiper-slide {
@@ -356,6 +364,7 @@ import Values from '../components/Values.astro';
 		background-size: cover;
 		background-position: center;
 		padding-top: 5rem;
+		background-color: red;
 	}
 
 
