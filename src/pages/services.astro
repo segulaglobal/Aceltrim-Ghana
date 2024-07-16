@@ -24,7 +24,7 @@ import Service1 from "../assets/service-1.png";
     <section class="section-services pb-40">
         <div class="container wrapper">
             <!-- Landscape Design and Installation: -->
-            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="landscape-design">
                 <div class="service-text">
                     <h2 class="heading-secondary mb-8">Landscape Design and Installation</h2>
                     <p> We bring your vision to life with custom designs tailored to your space and preferences. Our skilled team handles everything from selection to hardscape integration, ensuring a cohesive and stunning result.
@@ -36,16 +36,16 @@ import Service1 from "../assets/service-1.png";
                 </div>
                 <div class="service-image">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service1.src} alt="Aceltrim Group" />
+					<img src={Service1.src} alt="Landscape Design and Installation" />
                 </div>
             </div>
             <!-- End of Landscape Design and Installation -->
 
-            <!-- Landscape Design and Installation: -->
-            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+            <!-- Lawn Care and Maintenance -->
+            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="lawn-care">
                 <div class="service-image">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service1.src} alt="Aceltrim Group" />
+					<img src={Service1.src} alt="Lawn Care and Maintenance" />
                 </div>
                 <div class="service-text">
                     <h2 class="heading-secondary mb-8"> Lawn Care and Maintenance</h2>
@@ -57,10 +57,10 @@ import Service1 from "../assets/service-1.png";
                     </ol>
                 </div>
             </div>
-            <!-- End of Landscape Design and Installation -->
+            <!-- End of Lawn Care and Maintenance -->
 
-            <!-- Landscape Design and Installation: -->
-            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+            <!-- Hardscape Construction -->
+            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="hardscape-construction">
                 <div class="service-text">
                     <h2 class="heading-secondary mb-8">Hardscape Construction</h2>
                     <p>Enhance your outdoor living with expertly crafted hardscape elements from patios and walkways to retaining walls and water features.
@@ -72,13 +72,13 @@ import Service1 from "../assets/service-1.png";
                 </div>
                 <div class="service-image">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={Service1.src} alt="Aceltrim Group" />
+					<img src={Service1.src} alt="Hardscape Construction" />
                 </div>
             </div>
-            <!-- End of Landscape Design and Installation -->
+            <!-- End of Hardscape Construction -->
 
-            <!-- Landscape Design and Installation: -->
-            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+            <!-- Landscape Renovation and Enhancemen -->
+            <div class="service grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="landscape-renovation">
                 <div class="service-image">
                     <!-- <Image src={About1} alt="Aceltrim Group" /> -->
 					<img src={Service1.src} alt="Aceltrim Group" />
@@ -128,3 +128,37 @@ import Service1 from "../assets/service-1.png";
     <!-- End of section Gallery -->
 
 </MainLayout>
+
+
+
+
+
+
+
+
+<style lang="scss">
+
+.service {
+    margin-bottom: 10rem;
+    line-height: 1.8;
+
+    ol {
+
+        li {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 1.3rem;
+                height: 1.3rem;
+                background-color: var(--clr-lemon);
+                position: absolute;
+                top: 0;
+                left: -3.5rem;
+                transform: translateY(110%) rotate(45deg);
+            }
+        }
+    }
+}
+
+</style>
