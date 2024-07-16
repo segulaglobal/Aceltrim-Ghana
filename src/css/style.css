@@ -89,6 +89,31 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/* animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .4s ease-out;
+    filter: blur(3px);
+}
+.slide-fleft {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all .4s ease-out .1s;
+    filter: blur(3px);
+}
+.slide-fright {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all .4s ease-out .1s;
+    filter: blur(3px);
+}
+.show {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+}
+
 
 
 

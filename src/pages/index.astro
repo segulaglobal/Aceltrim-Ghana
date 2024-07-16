@@ -115,8 +115,8 @@ import Values from '../components/Values.astro';
 	<!-- =========================== Section About ===================== -->
 	<section class="section-home_about py-40 relative">
 		<div class="container wrapper">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-				<div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+				<div class="slide-fleft">
 					<h1 class="heading-big">Welcome to Aceltrim</h1>
 					<p class="mb-8">Where we transform landscapes into vibrant works of art.
 					<br>
@@ -126,7 +126,7 @@ import Values from '../components/Values.astro';
 				</div>
 				<div>
 					<!-- <Image src={About1} alt="Aceltrim Group" /> -->
-					<img src={About2.src} alt="Aceltrim Group" data-aos="fade-up"/>
+					<img src={About2.src} alt="Aceltrim Group" class="fade-up" />
 				</div>
 			</div>
 		</div>
@@ -157,7 +157,7 @@ import Values from '../components/Values.astro';
 
 			<div class="grid grid-cols-1 gap-12">
 				<!-- Landscape Design and Installation-1 -->
-				<div class="service grid grid-cols-1 md:grid-cols-2  items-center">
+				<div class="service grid grid-cols-1 md:grid-cols-2  items-center fade-up">
 					<div class="service-text md:text-left md:pr-12">
 						<h3>Landscape Design and Installation</h3>
 						<p>Landscape design services to enhance the aesthetic appeal of residential and commercial properties.
@@ -171,7 +171,7 @@ import Values from '../components/Values.astro';
 				<!-- End of Landscape Design and Installation -->
 
 				<!-- Lawn Care and Maintenance -->
-				<div class="service grid grid-cols-1 md:grid-cols-2  items-center">
+				<div class="service grid grid-cols-1 md:grid-cols-2  items-center fade-up">
 					<div class="service-text md:text-left md:pr-12">
 						<h3>Lawn Care and Maintenance</h3>
 						<p> Regular lawn mowing, trimming, and edging services to keep lawns looking
@@ -185,7 +185,7 @@ import Values from '../components/Values.astro';
 				<!-- End of LawnCare and Maintenance -->
 
 				<!-- Hardscape Construction -->
-				<div class="service grid grid-cols-1 md:grid-cols-2  items-center">
+				<div class="service grid grid-cols-1 md:grid-cols-2  items-center fade-up">
 					<div class="service-text md:text-left md:pl-12">
 						<h3> Hardscape Construction</h3>
 						<p> Customized hardscape design and installation services, including patios,
@@ -199,7 +199,7 @@ import Values from '../components/Values.astro';
 				<!-- End of Hardscape Construction -->
 
 				<!-- Landscape Renovations -->
-				<div class="service grid grid-cols-1 md:grid-cols-2  items-center">
+				<div class="service grid grid-cols-1 md:grid-cols-2  items-center fade-up">
 					<div class="service-text md:text-left md:pr-12">
 						<h3> Landscape Renovation and Enhancement</h3>
 						<p> Comprehensive landscape renovation services to revitalize outdated or
@@ -364,7 +364,6 @@ import Values from '../components/Values.astro';
 		background-size: cover;
 		background-position: center;
 		padding-top: 5rem;
-		background-color: red;
 	}
 
 
@@ -449,11 +448,9 @@ import Values from '../components/Values.astro';
 
 	}
 	.swiper-pagination-bullets {
-		// background-color: red;
 		// width: 100px;
 
 		span {
-			// background-color: red;
 		}
 	}
 }
